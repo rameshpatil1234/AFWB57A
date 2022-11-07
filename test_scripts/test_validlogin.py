@@ -2,7 +2,6 @@ import time
 
 import time
 from generic.base_test import BaseTest
-from generic.utility import Excel
 from pages.login_page import LoginPage
 from pages.home_page import HomePage
 
