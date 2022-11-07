@@ -16,7 +16,11 @@ class BaseTest:
         # create object of Properties class
         pfile = Properties()
         # open the property file
-        pfile.load(open('../config.properties'))
+        try:
+            pfile.load(open('../config.properties'))
+        except:
+            pfile.load(open('config.properties'))
+
         # get the value by specifying the key
         browser = pfile['browser']
         url = pfile['url']
