@@ -8,7 +8,7 @@ class HomePage:
     def __init__(self, driver):
         self.__driver = driver
 
-    def verify_logout_is_displayed(self, wait):
+    def verify_homepage_is_displayed(self, wait):
         try:
             wait.until(EC.visibility_of_element_located(self.__logout))
             print("Homepage is displayed")

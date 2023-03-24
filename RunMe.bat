@@ -1,1 +1,1 @@
-pytest -vs --html=test_result/report.html
+pytest -vs --html=test_result/report.html --capture sys
