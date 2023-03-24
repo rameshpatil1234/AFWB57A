@@ -16,9 +16,9 @@ class TestInValidLogin(BaseTest):
             pw = Excel.get_cell_value("data/input.xlsx", "Invalidlogin", 2, 2)
         loginpage = LoginPage(self.driver)
 
-        # enter invalid un
+        # enter invalid username
         loginpage.set_username(un)
-        # enter invalid pw
+        # enter invalid password
         loginpage.set_password(pw)
         # click on login button
         loginpage.click_loginbutton()
